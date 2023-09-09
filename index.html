@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1"/>
+        <title>Rock Paper Scissor</title>
+        <link rel="shortcut icon" href="../practice/images/rock-paper-scissors.png" type="image/png">
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;300&family=Lexend+Zetta:wght@300;900&display=swap" rel="stylesheet">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="page-container">
+            <div class="wrapper">
+                <div class="subtitle">
+                    <p class="text">WHERE FINGERS FIGHT !!!</p></div>
+                <div class="main">
+                    <div class="text-wrap">
+                        <p class="name">ROCK<br>PAPER<br>SCISSOR</p>
+                    </div>
+                    <div class="instructions">
+                        <h4>Game Guide:</h4>
+                            <ol>
+                                <li>You vs Cpu</li>
+                                <!--<li>First to score  5pts <span>WINS</span></li>-->
+                            </ol>
+                    </div>
+                    <div class="console-wrap">
+                        <div class="bg">
+                            <div class="display">
+                                <div class="psec1">
+                                    <div id="b1"><p class="player">PLAYER</p></div>
+                                    <div id="pimage"></div>
+                                    <div id="b2"><p class="p-pts"id="pointsP">Pts:  0</p></div>
+                                </div>
+                                <div class="cpusec2">
+                                    <div id="b3"><p class="cpu">CPU</p></div>
+                                    <div id="cpuimage"></div>
+                                    <div id="b4"><p class="cpu-pts" id="pointsC">Pts:  0</p></div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="button-sec">
+                            <div class="btnsec1">
+                                <button class="rock" id="rbtn"><img src="../practice/images/stone.png" alt="rock"></button>
+                                <button class="paper" id="pbtn"><img src="../practice/images/note.png" alt="paper"></button>
+                                <button class="scissor" id="sbtn"><img src="../practice/images/scissor.png" alt="scissor"></button>
+                            </div>
+                            <div class="btnsec2">
+                               <!--<button class="on-off">ON/OFF</button>-->
+                                <button type="button" class="reset" id="resetbtn">Reset</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <p> developed by yogesh</p>
+            </div>
+        </div>
+    </body>
+</html>

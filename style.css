@@ -1,0 +1,212 @@
+:root{
+    --consoleText:('Lexend Deca', sans-serif);
+    --pageText:('Lexend Zetta', sans-serif);
+    font-size: 62.5%;
+}
+*{
+    margin:0; padding: 0;
+    box-sizing: border-box;
+  /*  border: 1px solid white;*/
+}
+body{
+   background-color:rgba(0, 0, 0, 0.9);
+}
+.page-container{
+    display:flex;
+    flex-direction: column;
+    min-height:100vh;min-width: max-content;
+}
+.wrapper{
+    display:flex;flex-direction:column;
+    background-color:#37301D;
+    margin-top:4rem;margin-left:4rem;
+    min-height:85vh;min-width:95%;
+    justify-content:flex-start;
+    
+}
+.subtitle{
+    margin: 2rem 0 0 50rem;
+}
+.text{
+    display:flex;
+    word-wrap: break-word;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+    0px 4px 4px rgba(0, 0, 0, 0.25), 
+    0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    font-family:'Lexend Zetta', sans-serif;
+    letter-spacing: 2rem;
+    font-size:1rem;color:white;
+    font-weight: 400;
+}
+.main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;gap: 50px;
+    min-height:85vh;min-width:95%;
+}
+.text-wrap{
+    margin-left: 3rem;align-self:center;
+    min-height: 44rem; min-width:55rem ;
+    display: flex;margin-bottom: 10rem;
+    font-size: 10rem;
+    font-family:'Lexend Zetta', sans-serif;
+    background: #1D2112;
+    box-shadow: 30px 30px 0px 0px #D3FBD8;
+    justify-content: center;
+}
+.name{
+    padding:3rem;
+    color: #E18757;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 
+    0px 4px 4px rgba(0, 0, 0, 0.25), 
+    0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 7rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 16rem;
+}
+.footer{
+    margin-top: 2rem;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    font-family:'Lexend Zetta', sans-serif;
+    color:azure;letter-spacing: 1rem;
+    font-size: 0.75rem;font-weight: 400;
+}
+.instructions{
+    padding: 1.5rem;
+    font-family:'Lexend Zetta', sans-serif;
+    align-self: center;color:white;
+    line-height:2rem;
+    border: 1px  grey;
+    border-style: dashed;
+}
+.instructions>ol>li{
+    
+    margin-left: 4rem;
+}
+.instructions>ol>li>span{
+    color:yellow;
+}
+.console-wrap{
+    display: flex;flex-direction: column;
+    align-self: flex-end;align-items: center;
+    justify-content: space-around;
+    min-height:70rem;min-width:50rem;
+    margin-top: 3rem;
+    margin-bottom:6rem;margin-right: 10rem;
+    border-radius: 1rem 1rem 10rem 1rem;
+    background: rgba(0, 39, 53, 0.80);
+    box-shadow: 20px 20px 4px 0px rgba(0, 0, 0, 0.25),
+     0px 4px 4px 0px rgba(0, 0, 0, 0.25), 
+     0px 4px 4px 0px rgba(0, 0, 0, 0.25), 
+    0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.bg{
+    width:45rem;min-height:30rem;
+    background-color:#141E11;
+    display: flex;
+    align-items: center;justify-content: center;
+}
+.display{
+    width:41rem;min-height: 26rem;
+    font-family:'Lexend Deca', sans-serif;
+    background: #9F9F9F;
+    mix-blend-mode: screen;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.25), 
+    0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    display: flex;justify-content: space-between;
+}
+.display>div{
+    border:black 0.001rem solid;
+}
+.psec1,.cpusec2{
+    min-width: 20.5rem;
+    display: flex;align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+#b1,#b3{
+    padding: 1.5rem;
+    display: flex; align-items: center;
+    justify-content: center;
+    border-bottom: dashed black 1px;
+    min-width:20.5rem
+}
+#b2,#b4{
+    padding: 1.5rem;
+    display: flex; align-items: center;
+    justify-content: center;
+    border-top: dashed black 1px;
+    min-width:20.5rem
+}
+.player,.cpu{
+    color: #000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+     0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.8rem;
+}
+.p-pts,.cpu-pts{
+    color: #000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 
+    0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 0.825rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+.button-sec{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+img{
+    height: 25px;width:25px;
+}
+.btnsec1,.btnsec2{
+    display: flex;flex-direction: column;
+    height: 25rem;width: 21.5rem;
+    flex-wrap: wrap;gap:30px;
+    border: 0.5px solid #A6C7D9;
+    align-items: center;justify-content: center;
+}
+.btnsec1>button{
+    height:40px;width: 50px;
+    border-radius: 30px;border-color: #9ABD38;
+    background:#9ABD38;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 
+    0px 4px 4px 0px rgba(0, 0, 0, 0.25), 
+    0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.btnsec2>button{
+    font-size:1rem;
+    font-weight: 600;letter-spacing:0.3rem;
+    color: #fff;
+    font-family:'Lexend Deca', sans-serif;
+    height: 40px;width: 80px;
+    border-radius: 10px;
+    background: #9D9D9D;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.25), 
+    0px 4px 4px 0px rgba(0, 0, 0, 0.25), 
+    0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+.btnsec2{
+    border-radius: 0 0 10rem 0;
+    border-left: none;
+}
+button{
+    cursor:url('./target.png'),auto;
+}
+#pimage,#cpuimage{
+   font-size: xx-large;
+}
