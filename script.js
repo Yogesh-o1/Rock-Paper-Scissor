@@ -60,6 +60,7 @@ function gamePlay(ps,cs){
     paperbtn.addEventListener("click",() => fingerPlay("paper"))
     scissorbtn.addEventListener("click",() => fingerPlay("scissor"))
     rstbtn.addEventListener("click",scoreReset)
+
 function cpuChoice(){
     let x= Math.floor((Math.random()*3)+1)
     switch(x){
