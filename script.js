@@ -50,7 +50,7 @@ function gamePlay(ps,cs){
     const rockbtn=document.getElementById("rbtn")
     const paperbtn=document.getElementById("pbtn")
     const scissorbtn=document.getElementById("sbtn")
-    const resetbtn=document.getElementById("resetbtn")
+    const rstbtn=document.getElementById("resetbtn")
     const playerPts=document.getElementById("pointsP")
     const cpuPts=document.getElementById("pointsC")
     const plSel=document.getElementById("pimage")
@@ -59,6 +59,7 @@ function gamePlay(ps,cs){
     rockbtn.addEventListener("click",() => fingerPlay("rock"))
     paperbtn.addEventListener("click",() => fingerPlay("paper"))
     scissorbtn.addEventListener("click",() => fingerPlay("scissor"))
+    rstbtn.addEventListner("click",scoreReset)
 
 function cpuChoice(){
     let x= Math.floor((Math.random()*3)+1)
@@ -111,9 +112,13 @@ function updateChoice(ps,cs){
     }
 }
 //✂️✌️⛰️📄🪨✊✋//
-/*function  scoreReset(){
+function  scoreReset(){
     ppts=0
     cpts=0
     ps=""
     cs=""
-}*/
+    playerPts.textContent=`Pts:  ${ppts}`
+    cpuPts.textContent=`Pts:  ${cpts}`
+    plSel.textContent= ""
+    cpuSel.textContent= ""
+}
