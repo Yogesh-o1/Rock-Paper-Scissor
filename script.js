@@ -60,7 +60,6 @@ function gamePlay(ps,cs){
     paperbtn.addEventListener("click",() => fingerPlay("paper"))
     scissorbtn.addEventListener("click",() => fingerPlay("scissor"))
     rstbtn.addEventListener("click",scoreReset)
-
 function cpuChoice(){
     let x= Math.floor((Math.random()*3)+1)
     switch(x){
@@ -112,7 +111,7 @@ function updateChoice(ps,cs){
     }
 }
 //✂️✌️⛰️📄🪨✊✋//
-function  scoreReset(){
+function scoreReset(){
     ppts=0
     cpts=0
     ps=""
