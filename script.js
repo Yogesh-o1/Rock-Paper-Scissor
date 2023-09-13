@@ -125,8 +125,8 @@ function scoreReset(){
     cpuSel.textContent= ""
 }
 
-function sayWinner(){
+/*function sayWinner(){
     if(ppts==5||cpts==5){
         alert(`${winner}`)
     }
-}
+}*/
