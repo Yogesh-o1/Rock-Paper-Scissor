@@ -4,6 +4,7 @@ let ppts=0;
 let cpts=0;
 let n=0;
 let winner=""
+let gameWinner=""
 
 //console.table({psec:ps,csec:cs,Ppts:ppts,Cpts:cpts,result:winner});//
 function gamePlay(ps,cs){
@@ -79,6 +80,7 @@ function fingerPlay(name){
     gamePlay(ps,cs)
     gameScore()
     updateChoice(ps,cs)
+    sayWinner()
     }
 
 function gameScore(){
@@ -121,4 +123,10 @@ function scoreReset(){
     cpuPts.textContent=`Pts:  ${cpts}`
     plSel.textContent= ""
     cpuSel.textContent= ""
+}
+
+function sayWinner(){
+    if(ppts==5||cpts==5){
+        alert(`${winner}`)
+    }
 }
